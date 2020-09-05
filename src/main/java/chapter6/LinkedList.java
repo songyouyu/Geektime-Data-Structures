@@ -164,44 +164,4 @@ public class LinkedList<E> {
         this.remove(size - 1);
     }
 
-    /**
-     * 反转链表, 返回反转之后的链表
-     * @param node
-     * @return
-     */
-    public Node reverse(Node node) {
-        // node != null
-        Node prev = null;
-        Node cur = node;
-        while (cur != null) {
-            Node next = cur.next;
-            cur.next = prev;
-            prev = cur;
-            cur = next;
-        }
-
-        return prev;
-    }
-
-    /**
-     * 使用快慢指针检查链表中是否有环
-     * @param node
-     * @return
-     */
-    public boolean checkCircle(Node node) {
-        Node oneStep = dummyHead;
-        Node twoStep = dummyHead;
-
-        while (twoStep != null && twoStep.next != null) {
-            oneStep = oneStep.next;
-            twoStep = twoStep.next.next;
-
-            if (twoStep == oneStep) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
 }
