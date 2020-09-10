@@ -1,4 +1,4 @@
-package chapter7;
+package chapter8;
 
 /**
  * 链表的简单实现

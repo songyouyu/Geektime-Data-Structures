@@ -1,4 +1,4 @@
-package chapter7;
+package chapter8;
 
 /**
  * 使用数组实现栈

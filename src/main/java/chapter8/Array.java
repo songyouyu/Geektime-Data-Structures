@@ -1,4 +1,4 @@
-package chapter7;
+package chapter8;
 
 /**
  * 数组的简单实现

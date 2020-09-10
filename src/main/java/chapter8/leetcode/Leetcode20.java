@@ -1,4 +1,4 @@
-package chapter7.leetcode;
+package chapter8.leetcode;
 
 import java.util.Stack;
 
