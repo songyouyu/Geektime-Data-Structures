@@ -25,7 +25,7 @@ public class QuickSort {
         }
 
         int p = partition(arr, l, r);
-        sort(arr, l, p);
+        sort(arr, l, p - 1);
         sort(arr, p + 1, r);
     }
 
@@ -46,7 +46,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4, 3, 2, 1, 7, 5, 6, 9, 8};
+        int[] arr = {2, 1, 4, 6, 7, 5, 9, 3, 8, 11, 10};
         new QuickSort().quickSort(arr);
         System.out.println(Arrays.toString(arr));
     }
